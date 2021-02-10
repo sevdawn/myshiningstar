@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Sevdawn Photography - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script src="countdown.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="#">Sevdawn Photography</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="header container-fluid">
+		<div class="overlay"></div>
+		<div class="description">
+			<h1>Welcome to Sevdawn Photography!</h1>
+			<p>I am NOT a pro photographer. I say all the time that 'I'm no pro photog, just a fan with a smartphone'  That said, over the years I've accumulated many 
+				incredible pics with just a smartphone, GIMP photo editor, and LOTS of trial and error. 'Crazy Stories' takes you to a page detailing just six of the countless
+				stories I've accumulated over the years. 'Gallery' button takes you to two galleries I have uploaded to Flickr. I am just starting on my journey of chronicling
+				 my photos as I have quite literally hundreds of photos I've snapped in venues all over the US since 2015.
+			</p>
+		
+			<button type="button" class="btn btn-primary" onclick="window.location.href='stories/index.html';">Crazy Stories</button>
+			<button type="button" class="btn btn-primary" id="bard">Meet the Bard of the Freakshow</button>
+			<button type ="button" class="btn btn-primary" type="submit"  onclick="window.location.href='gallery/index.html';">Flickr Gallery</button>
+				
+			</div>
+		</header> 
+		
+
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">All the way from Gothenburg, Sweden </h3>
+				<img src="images/stage.jpg" alt="Gin Swift Halloween 2019" class="img-fluid">
+				<p>I first discovered the Swedish metal band AVATAR in Oct 2014 at the first Louder than Life festival in Louisville KY. As of Sept 2019, I've seen them
+					25 times across 7 states in everywhere from hole in the wall bars to massive music festivals. I've taken hundreds of pics taken, made countless friends, and memories
+					 that will last a lifetime.
+                </p>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12">	
+				<h3 class="feature-title">So I've seen AVATAR a few times
+				(this is just since 2018)
+				</h3>
+				<div id="showData"></div>
+						</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">COUNTDOWN TO NEXT AVATAR TOUR DATE
+											(if we're lucky)
+				</h3>
+				<div id="clockdiv">
+					<div>
+					  <span class="days"></span>
+					  <div class="smalltext">Days</div>
+					</div>
+					<div>
+					  <span class="hours"></span>
+					  <div class="smalltext">Hours</div>
+					</div>
+					<div>
+					  <span class="minutes"></span>
+					  <div class="smalltext">Minutes</div>
+					</div>
+					<div>
+					  <span class="seconds"></span>
+					  <div class="smalltext">Seconds</div>
+					</div>
+				  </div>
+				  If all goes well, AVATAR's next tour date is scheduled to happen at 
+				   Estadi Olímpic Lluís Companys in Barcelona, Spain on Jun 19, 2021.
+				 
+			</div>
+			
+		</div> 
+	</div>
+
+	<div class="bs-modal"></div>
+		<div id="bard-modal" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">								
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<img src="images/social.jpg" alt="Gin Swift in Cosplay" style="width:100%;height:100%;">
+						<p>Photo Credit: <a href="https://www.briankuhnphotography.com/">Brian Kuhn Photography</a> Oct 2018 Cincy OH This is currently my profile pic across social media.
+							Since then they released 'Hunter Gatherer' which means I'll need to design a new outfit for the next show. 
+							</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-12">
+					<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<h6 class="text-uppercase font-weight-bold">Contact</h6>
+					<p>somewhere between Louisville KY and Fort Knox
+					<br/>swiftv@gmx.us
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center">© 2015 Copyright: Sevdawn Photography. All rights reserved.</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+		
+    </body>
+    </html>
