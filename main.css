@@ -4,6 +4,20 @@ body {
 	background: #000000;
 }
 
+
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+.modal-content {
+	background-color:rgba(0, 0, 0, 0.4);
+	color:  #ff0008;
+}
+
 table, th, td {
 	border: 1px solid #ff0008;
   }
@@ -16,18 +30,18 @@ table, th, td {
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #clockdiv > div{
-	padding: 10px;
+	padding: 5px;
 	border-radius: 3px;
 	background: #ff0008;
 	display: inline-block;
 }
 
 #clockdiv div > span{
-	padding: 15px;
+	padding: 5px;
 	border-radius: 3px;
 	background: #ff0008;
 	display: inline-block;
@@ -111,7 +125,7 @@ table, th, td {
 }
 
 .description button:hover {
-	border: 1px solid #fff;
+	border: 1px solid #ff0008;
 	background: #fdbf29;
 	color: #000;
 }
