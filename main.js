@@ -8,6 +8,11 @@ $(document).ready(function(){
 
 // external JSON file JS //
 
+
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+
+
 $(document).ready(function () {
     $.getJSON("venues.json", function (data) {
 
