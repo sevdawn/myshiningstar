@@ -5,13 +5,8 @@ body {
 }
 
  .modal-footer, .modal-content {
-    border-bottom: 0 none;
-	background: #000000;
-	color: #ff0008;
-}
-
-.modal-footer {
 	border-top: 0 none;
+    border-bottom: 0 none;
 	background: #000000;
 }
 
