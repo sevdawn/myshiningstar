@@ -5,25 +5,21 @@
     <title>My Shining Star</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<link rel="stylesheet" type="text/css" href="./main.css">
 	</head>
 
 <body>
+
+	
 	<nav class="navbar navbar-expand-md">
 		<a class="navbar-brand" href="#">My Shining Star</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="main-navigation">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About</a>
-				</li>
-			</ul>
+			
 		</div>
 	</nav>
 
@@ -36,7 +32,7 @@
 				'Flickr Gallery' button to see a small sample of my work photographing this incredible band. 
 				</p>
 		
-			<button type ="button" class="btn btn-primary" type="submit"  onclick="window.location.href='gallery/index.html';">Flickr Gallery</button>
+			<button type ="button" class="btn btn-primary" onclick="window.location.href='gallery/index.html';">Flickr Gallery</button>
 				
 			</div>
 		</header> 
@@ -84,7 +80,8 @@
 					  <div class="smalltext">Seconds</div>
 					</div>
 				  </div>
-				  <p>Right now, it is <span id="datetime"></span>. If all goes well, AVATAR's next tour date is scheduled to happen at 
+				  <p>
+				 	 If all goes well, AVATAR's next tour date is scheduled to happen at 
 				   Estadi Olímpic Lluís Companys in Barcelona, Spain on Jun 19, 2021. They did 4 livestreams in Jan 2021,
 				  which were incredible, but there's nothing like seeing them perform live!</p>
 				 
@@ -98,24 +95,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-				</div>
+					<h6 class="text-uppercase font-weight-bold">About Me</h6>
+					Oh dear. Grab a cup of coffee (or something stronger, I'm partial to bourbon myself) and sit a spell. Wife, Mother, 
+				Sagittarian, Dragon, I am all of that and more. By night, I work for a local Amazon FC. Inbound is my home department, but I'm crosstrained 
+				all over the building so I never know where I'll end up throughout the night. During the day, when I'm not catching up on my beauty sleep, 
+				taking care of my three kids (my husband totally counts, he said so himself, so that makes 3) and the two cats, I'm learning how to be a front end web 
+				developer. I also admin a FB fan page for the Swedish metal band Avatar. I am quite well known as dressing up as AVATAR's vocalist Johannes Eckerström 
+				for shows and have given myself the title of Lady Gin Swift, Bard of the Freakshow. I also stream on Twitch from time to time, you can watch me be a filthy casual gamer. 
+				Click the icons below to visit me on the socials, or fill out the form and drop me a line, I'll try to get back to you as soon as possible!				</div>
+				
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Contact</h6>
-					<p>somewhere between Louisville KY and Fort Knox
-					<br/>swiftv@gmx.us
-
+					<h6 class="text-uppercase font-weight-bold">Contact the Bard</h6>
+					<form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/3hgywshzshgwf">
+						<div class="mb-3">
+						  <input type="text" class="form-control" name="data[Name]" placeholder="Name">
+						</div>
+						<div class="mb-3">
+						  <input type="email" class="form-control" name="data[Email]" placeholder="Email">
+						</div>
+						<div class="mb-3">
+						  <textarea id="message" class="form-control"  rows="4" name="data[Message]"  placeholder="Leave a message!"></textarea>
+						</div>        
+						<button type="submit" class="btn btn-danger btn-block">Submit</button>
+					  </form>
 				</div>
 			</div>
+		</div>			
+		
+	
+		<div class="footer-copyright text-center">© 2018 Copyright: Sevdawn Photography. All rights reserved. 
+			<div class="social-buttons">
+				<a href="https://www.twitch.tv/sevdawn"><i class="fab fa-twitch"></i></a>		
+				<a href="https://twitter.com/SevDawn"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/sevdawn"><i class="fab fa-instagram"></i></a>
+				
+			</div>	
 		</div>
-		<div class="footer-copyright text-center">© 2018 Copyright: Sevdawn Photography. All rights reserved.</div>
+
 		</footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="main.js"></script>
 		
     </body>
     </html>
+

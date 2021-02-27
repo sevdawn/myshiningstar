@@ -6,11 +6,8 @@ $(document).ready(function(){
     });
 });
 
+
 // external JSON file JS //
-
-
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
 
 $(document).ready(function () {
@@ -105,3 +102,21 @@ function getTimeRemaining(endtime) {
   
   const deadline = new Date(Date.parse('2021-06-19') + 15 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
+
+  // HTML form JS //
+
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(form.action, {
+	  method : "POST",
+	  body: new FormData(document.getElementById("sheetdb-form")),
+  }).then(
+	  response => response.json()
+  ).then((html) => {
+	alert('HEY IT WORKED! Click OK to see the results on this nifty Google Sheet!')
+	window.location.assign("https://docs.google.com/spreadsheets/d/14bzfUQ8J7P4q3028VyCbxwf88zKniMpvMkrPrhXXHE0/")
+  });
+});
+
+
