@@ -1,26 +1,18 @@
 // external JSON file JS //
 
-function loadJSONDoc() {
-  var xmlhttp;
-  xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      var obj = JSON.parse(xmlhttp.responseText);
-      var output = "<table>";
-      for (var name in obj[0].prices[0]) {
-        output += "<tr><td>" + name + "</td>" + "<td>" + venue[0].city[0][date] + "</td></tr>";
-      }
-      output += "</table>";
-      document.getElementById("myList").innerHTML = output;
-    }
-  }
-  xmlhttp.open("GET", "venues.json", true);
-  xmlhttp.send();
-}
+fetch('venues.json')
+  .then((response) => response.json())
+  .then((json) => json.forEach(tableElements)
+  )
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  loadJSONDoc();
-});
+  function tableElements (element, index, arr){
+    arr[index] = document.querySelector('#posts-table tbody').innerHTML +=
+    `<tr>
+        <td>${element.Venue}</td>
+        <td>${element.City}</td>
+        <td>${element.Date}</td>
+        </tr>`
+  }
 
 // countdown clock JS //
 

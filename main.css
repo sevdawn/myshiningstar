@@ -5,9 +5,10 @@ body {
 }
 
 table,
-th,
-td {
+th, td
+ {
     border: 1px solid #ff0008;
+    color: #fdbf29;
 }
 
 h1.flickr,
