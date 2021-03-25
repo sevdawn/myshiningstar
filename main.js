@@ -74,3 +74,6 @@ form.addEventListener("submit", e => {
       window.location.assign("https://docs.google.com/spreadsheets/d/14bzfUQ8J7P4q3028VyCbxwf88zKniMpvMkrPrhXXHE0/")
   });
 });
+
+
+  
