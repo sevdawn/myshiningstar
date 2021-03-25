@@ -5,10 +5,8 @@ Code Louisville Javascript 2021 project by Virginia Swift
 
 
 Pages created with help from https://websitesetup.org/bootstrap-tutorial-for-beginners/ 
-Flickr page created with help from https://nanogallery2.nanostudio.org/ 
 Contact form to Google Sheets created with help from SheetDB https://sheetdb.io/
-Social media icons by https://fontawesome.com/
-(I like to credit my sources as much as possible)
+
 
 Project features list:
 
