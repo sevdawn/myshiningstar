@@ -5,7 +5,10 @@ Code Louisville Javascript 2021 project by Virginia Swift
 
 
 Pages created with help from https://websitesetup.org/bootstrap-tutorial-for-beginners/ 
+Boostrap 5 beta 3
+Native Javascript for Bootstrap https://thednp.github.io/bootstrap.native/
 Contact form to Google Sheets created with help from SheetDB https://sheetdb.io/
+
 
 
 Project features list:

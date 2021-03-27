@@ -72,23 +72,6 @@ color: #6441a5;
 /*--- navigation bar ---*/
 
 
-.navbar-nav > li >a{
-    color: #ff0008;
-  }
- 
-
-.nav-link:hover {
-    color: #fdbf29;
-}
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-brand {
-    color: #ff0008;
-}
-
 
 /*--- header ---*/
 

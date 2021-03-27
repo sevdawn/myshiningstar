@@ -1,18 +1,34 @@
 // external JSON file JS //
 
-fetch('venues.json')
-  .then((response) => response.json())
-  .then((json) => json.forEach(tableElements)
-  )
+fetch("venues.json").then (
+                    res=>
+                    {
+                        res.json().then
+                        (
+                            data=>
+                            {
+                              console.log(JSON.stringify(data));  
+                              
+                              if(data.length >0)
+                                {
+                                    var temp = "";
 
-  function tableElements (element, index, arr){
-    arr[index] = document.querySelector('#posts-table tbody').innerHTML +=
-    `<tr>
-        <td>${element.Venue}</td>
-        <td>${element.City}</td>
-        <td>${element.Date}</td>
-        </tr>`
-  }
+                                    //Beginning of the For loop
+
+                                    data.forEach((u)=>{
+                                        temp +="<tr>";
+                                        temp +="<td>"+u.Venue+"</td>";
+                                        temp +="<td>"+u.City+"</td>";
+                                        temp +="<td>"+u.Date+"</td>"
+                                        temp +=  "</tr>";
+                                        })
+                                    // --- End of the For Loop
+
+                                    document.getElementById("data").innerHTML = temp; //The #tbody ID
+                                }
+                            }
+                        )
+                    });
 
 // countdown clock JS //
 
@@ -76,4 +92,4 @@ form.addEventListener("submit", e => {
 });
 
 
-  
+
