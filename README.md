@@ -1,7 +1,5 @@
 https://vswift76.github.io/myshiningstar/
 
-
-<<<<<<< HEAD
 Code Louisville Javascript 2021 project by Virginia Swift 
 
 This project is actually a continuation (sequel? reboot? remake? whatever you want to call it) of my first Code Louisville
@@ -14,7 +12,7 @@ Boostrap 5 beta 3
 Contact form to Google Sheets created with help from SheetDB https://sheetdb.io/
 Flickr Gallery styled with help from nanogallery2 https://nanogallery2.nanostudio.org/
 
-=======
+
 Code Louisville Javascript 2021 project by Virginia Swift. 
 This is a continuation and upgrade of my Code Louisville Front End Web Development project, showcasing my love of the 
 Swedish metal band AVATAR and my hobby of concert photography (Not a pro, just a fan with a smartphone) 
@@ -23,8 +21,7 @@ Speaking of concerts I MISS CONCERTS AND MY CONCERT FRIENDS.
 Page created with help from https://websitesetup.org/bootstrap-tutorial-for-beginners/ current version Boostrap 5 beta 3 (no more Jquery!) 
 Native Javascript for Bootstrap https://thednp.github.io/bootstrap.native/
 Contact form to Google Sheets created with help from SheetDB https://sheetdb.io/
-Flickr gallery styled with help from Flickrgal https://github.com/bluefantail/flickrGal
->>>>>>> 32fffdc4d1508edc597c494d7f1efe82ec0f9bc1
+
 
 Project features list:
 
