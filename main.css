@@ -14,7 +14,10 @@ th, td
 h1.flickr,
 h1.contact {
     text-align: center;
-    color: red;
+    color: #ff0008;
+}
+.navbar-dark .navbar-brand {
+   color: #ff0008;
 }
 
 .bi-twitch {
@@ -42,7 +45,7 @@ color: #6441a5;
 
 #clockdiv {
     font-family: sans-serif;
-    color: #fdbf29;
+    color: #000000;
     display: inline-block;
     font-weight: 100;
     text-align: center;
@@ -67,10 +70,6 @@ color: #6441a5;
     padding-top: 5px;
     font-size: 16px;
 }
-
-
-/*--- navigation bar ---*/
-
 
 
 /*--- header ---*/
@@ -168,46 +167,6 @@ color: #6441a5;
     border: 1px solid #fdbf29;
 }
 
-
-/*--- countdown timer ---*/
-
-.svcd-timer {
-    width: 100%;
-    margin-bottom: 8px;
-}
-
-.svcd-timer th {
-    color: #666;
-    font-size: 10px;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-.svcd-days,
-.svcd-hours,
-.svcd-mins,
-.svcd-secs {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #0a0;
-}
-
-.svcd-days {
-    color: #990;
-}
-
-.svcd-blastoff {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.svcd-until {
-    margin: 0;
-    font-size: 13px;
-    text-align: center;
-}
 
 /*--- footer ---*/
 

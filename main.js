@@ -1,34 +1,28 @@
 // external JSON file JS //
+fetch("venues.json").then(
+  res => {
+      res.json().then(
+          data => {
 
-fetch("venues.json").then (
-                    res=>
-                    {
-                        res.json().then
-                        (
-                            data=>
-                            {
-                              console.log(JSON.stringify(data));  
-                              
-                              if(data.length >0)
-                                {
-                                    var temp = "";
+              if (data.length > 0) {
+                  var temp = "";
 
-                                    //Beginning of the For loop
+                  //Beginning of the For loop
 
-                                    data.forEach((u)=>{
-                                        temp +="<tr>";
-                                        temp +="<td>"+u.Venue+"</td>";
-                                        temp +="<td>"+u.City+"</td>";
-                                        temp +="<td>"+u.Date+"</td>"
-                                        temp +=  "</tr>";
-                                        })
-                                    // --- End of the For Loop
+                  data.forEach((u) => {
+                      temp += "<tr>";
+                      temp += "<td>" + u.Venue + "</td>";
+                      temp += "<td>" + u.City + "</td>";
+                      temp += "<td>" + u.Date + "</td>"
+                      temp += "</tr>";
+                  })
+                  // --- End of the For Loop
 
-                                    document.getElementById("data").innerHTML = temp; //The #tbody ID
-                                }
-                            }
-                        )
-                    });
+                  document.getElementById("data").innerHTML = temp; //The #tbody ID
+              }
+          }
+      )
+  });
 
 // countdown clock JS //
 
@@ -38,13 +32,13 @@ function getTimeRemaining(endtime) {
   const minutes = Math.floor((total / 1000 / 60) % 60);
   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
   const days = Math.floor(total / (1000 * 60 * 60 * 24));
-  
+
   return {
-    total,
-    days,
-    hours,
-    minutes,
-    seconds
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
   };
 }
 
@@ -56,24 +50,24 @@ function initializeClock(id, endtime) {
   const secondsSpan = clock.querySelector('.seconds');
 
   function updateClock() {
-    const t = getTimeRemaining(endtime);
+      const t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
+      if (t.total <= 0) {
+          clearInterval(timeinterval);
+      }
   }
 
   updateClock();
   const timeinterval = setInterval(updateClock, 1000);
 }
-  
-  const deadline = new Date(Date.parse('2021-06-19') + 15 * 24 * 60 * 60 * 1000);
-  initializeClock('clockdiv', deadline);
+
+const deadline = new Date(Date.parse('2021-06-19') + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
 
 // HTML form JS //
 
@@ -90,6 +84,4 @@ form.addEventListener("submit", e => {
       window.location.assign("https://docs.google.com/spreadsheets/d/14bzfUQ8J7P4q3028VyCbxwf88zKniMpvMkrPrhXXHE0/")
   });
 });
-
-
 
